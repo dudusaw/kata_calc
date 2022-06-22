@@ -1,21 +1,13 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(calc("III + II"));
-        System.out.println(calc("IV + I"));
-        System.out.println(calc("V * I"));
-        System.out.println(calc("X / II"));
-        System.out.println(calc("X / III"));
-        System.out.println(calc("X - III"));
-        System.out.println(calc("XXIX - X"));
-        System.out.println(calc("10 - 10"));
-        System.out.println(calc("10 - 20"));
-        System.out.println(calc("2 * 2"));
-        System.out.println(calc("2 / 2"));
-        //System.out.println(calc("3 * I"));
-        //System.out.println(calc("V - X"));
+        Scanner scanner = new Scanner(System.in);
+        String line = scanner.nextLine();
+        System.out.println(calc(line));
     }
 
     public static String calc(String input) {
